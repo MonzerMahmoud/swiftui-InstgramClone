@@ -11,7 +11,6 @@ struct LoginView: View {
     @State private var name: String = ""
     @State private var password: String = ""
     let verticalPaddingForForm = 40.0
-    
     var body: some View {
         ZStack {
             
@@ -40,19 +39,30 @@ struct LoginView: View {
                 .background(Color.white)
                 .cornerRadius(10)
                     
-                Button(action: {}) {
+                ZStack {
+                    Button(action: {}) {
+                        Text("")
+                            .padding()
+                            
+                    }
+                    .frame(width:80)
+                    .foregroundColor(.white)
+                    .background(Color.black)
+                    .cornerRadius(30)
+                    .opacity(0.8)
+                    
                     Text("Login")
-                        .padding()
+                        .foregroundColor(.white)
+                        .fontWeight(.heavy)
                 }
-                .foregroundColor(.white)
-                .background(Color.black)
-                .cornerRadius(10)
                 
                 VStack {
                     Text("Dont have an account?")
                     Button(action: {}) {
                         Text("Sign Up")
-                            .foregroundColor(.red)
+                            .foregroundColor(Color(hue: 0.542, saturation: 0.916, brightness: 0.822))
+                            .fontWeight(.bold)
+                            .opacity(0.8)
                     }
                 }
                 

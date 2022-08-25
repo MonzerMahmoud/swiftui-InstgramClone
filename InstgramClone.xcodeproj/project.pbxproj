@@ -15,6 +15,8 @@
 		F4C48EC127777D100096EC64 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48EC027777D100096EC64 /* HomeView.swift */; };
 		F4C48EC427778FC30096EC64 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48EC327778FC30096EC64 /* StoriesView.swift */; };
 		F4C48EC6277799210096EC64 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C48EC5277799210096EC64 /* Post.swift */; };
+		F4C8529E2777CCD4009AF349 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8529D2777CCD4009AF349 /* Story.swift */; };
+		F4C852A027786751009AF349 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C8529F27786751009AF349 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		F4C48EC027777D100096EC64 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F4C48EC327778FC30096EC64 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		F4C48EC5277799210096EC64 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F4C8529D2777CCD4009AF349 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		F4C8529F27786751009AF349 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				F4C48EB12777629C0096EC64 /* ContentView.swift */,
 				F4C48EBD277779860096EC64 /* LoginView.swift */,
 				F4C48EC027777D100096EC64 /* HomeView.swift */,
+				F4C8529F27786751009AF349 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			children = (
 				F4C48EC327778FC30096EC64 /* StoriesView.swift */,
 				F4C48EC5277799210096EC64 /* Post.swift */,
+				F4C8529D2777CCD4009AF349 /* Story.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C852A027786751009AF349 /* ProfileView.swift in Sources */,
+				F4C8529E2777CCD4009AF349 /* Story.swift in Sources */,
 				F4C48EBE277779860096EC64 /* LoginView.swift in Sources */,
 				F4C48EC427778FC30096EC64 /* StoriesView.swift in Sources */,
 				F4C48EC127777D100096EC64 /* HomeView.swift in Sources */,

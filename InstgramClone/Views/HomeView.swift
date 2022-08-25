@@ -25,27 +25,6 @@ struct HomeView: View {
                 Post(profileImage: "profile2", name: "Zeco", postImage: "dog", description: "Waht a day")
             }
             
-            VStack {
-                Divider()
-                
-                HStack {
-                    Image("home")
-                    Spacer()
-                    Image("search")
-                    Spacer()
-                    Image("reels")
-                    Spacer()
-                    Image("shop")
-                    Spacer()
-                    Image("profile")
-                        .resizable()
-                        .frame(width: 21, height: 21)
-                        .cornerRadius(50)
-                }
-                .padding(.horizontal, 25)
-                .padding(.top, 10)
-            }
-            
         }
     }
 }
@@ -56,7 +35,7 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-struct Header: View {
+fileprivate struct Header: View {
     var body: some View {
         HStack(spacing: 20) {
             Image("logo")
@@ -70,32 +49,8 @@ struct Header: View {
     }
 }
 
-struct Story: View {
-    var image: String = "profile"
-    var name: String = "Monzer"
-    
-    var body: some View {
-        VStack {
-            VStack {
-                Image(image)
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .cornerRadius(50)
-            }
-            .overlay(
-                Circle()
-                    .stroke(LinearGradient(colors: [.red, .purple, .red, .orange, .yellow, .orange], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2.3)
-                    .frame(width: 68, height: 68)
-            )
-            .frame(width: 70, height: 70)
-            
-            Text(name)
-                .font(.caption)
-        }
-    }
-}
 
-struct Stories: View {
+fileprivate struct Stories: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 15) {
@@ -113,4 +68,3 @@ struct Stories: View {
         .padding(.vertical)
     }
 }
-
